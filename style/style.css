@@ -1,0 +1,294 @@
+
+/* =============== 全域設定 =============== */
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+body{
+  margin: 0 auto;
+}
+.w-792 {
+  width: 792px;
+  margin: 0 auto;
+}
+.w-1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.w-1539 {
+  width: 1539px;
+  margin: 0 auto;
+}
+.w-1920 {
+  width: 1920px;
+  margin: auto;
+}
+.color-primary {
+  color: #AA0601;
+}
+.color-secondary {
+  color: #650300;
+}
+.color-white {
+  color: #fff;
+}
+.color-black {
+  color: #000;
+}
+.color-grey {
+  color: #707070;
+}
+.bg-color-primary {
+  background-color: #AA0601;
+}
+.bg-color-secondary {
+  background-color: #650300;
+}
+.bg-color-tertiary {
+  background-color: #fbf3f1;
+}
+.flex-row {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =============== header - navigation =============== */
+
+/* .navigation {
+  
+} */
+
+.navigation-inner {
+  padding: 30px 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.navigation ul li {
+  margin-left: 64px;
+}
+
+
+/* =============== header - banner =============== */
+
+.banner {
+  background: url(../image/banner.png)
+              center top
+              no-repeat;
+  padding: 350px 0;
+  padding-right: 360px;
+}
+.banner p, .banner h1 {
+  text-align: right;
+}
+.banner p {
+  line-height: 50px;
+}
+.banner h1 {
+  line-height: 90px;
+}
+
+/* =============== header - aboutUs =============== */
+
+.aboutUs {
+  padding-top: 64px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutUs h2 {
+  margin-bottom: 44px;
+}
+.aboutUs ul {
+  display: flex;
+  align-items: flex-start;
+}
+.aboutUs li {
+  padding: 16px 37px 0px;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutUs li img {
+  height: 100px;
+  margin-bottom: 40px;
+}
+.aboutUs li h3 {
+  margin-bottom: 4px;
+}
+.aboutUs li p {
+  width: 210px;
+  letter-spacing: 0px;
+}
+
+/* =============== main - classic =============== */
+
+.classic {
+  padding-top: 64px;
+}
+.classic h2 {
+  margin-bottom: 60px;
+  text-align: center;
+}
+/* .classic-Series ul預設是block，column排列 ，所以不用另外設定flex-direction:column*/
+.classic-Series li {
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  margin-bottom: 32px;
+}
+.classic-Series li>img {
+  margin-right: 24px;
+}
+.classic-Series-title {
+  display: flex;
+}
+.classic-Series-icon {
+  margin-right: 8px;
+}
+/* 下列設定可新增其他新的圖也不怕跑版 */
+.classic-Series li:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.classic-Series li:nth-of-type(even)>img{
+  margin-right: 0px;
+  margin-left: 24px;
+}
+.classic-Series li:nth-last-of-type(1) {
+  margin-bottom: 80px;
+}
+
+/* =============== main-co-branding-top =============== */
+
+.co-branding {
+  /* height: 2468px; */
+  background: url(../image/bg.png) 
+              center top
+              no-repeat;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+.co-branding h1{
+  margin-bottom: 60px;
+  text-align: center;
+}
+/* ---- 圖片區 ---- */
+.co-branding-up {
+  margin-bottom: 60px;
+}
+.co-branding-up img {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+.co-branding-inside-left {
+  display: flex;
+}
+.co-branding-inside-right-bottom-left {
+  display: flex; 
+}
+.co-branding-inside-right-bottom-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* ---- margin歸零 ---- */
+
+.co-branding-inside-right-top > img,
+.co-branding-inside-right-bottom-right > img {
+  margin-right: 0px;
+}
+.co-branding-inside-left > img,
+.co-branding-inside-right-bottom-left > img {
+  margin-bottom: 0px;
+}
+
+/* ---- more button ---- */
+.btn-more-yellow {
+  position: relative;
+  background: url(../image/more.png)
+              no-repeat;
+  width: 342px;
+  height: 167px;
+  padding-right: 83px;
+  padding-left: 27px;
+  padding-top: 27px;
+}
+.btn-more-white{
+  position: absolute;
+  background: #fff;
+  width: 315px;
+  padding-left: 32px;
+  padding-right: 19px;
+  display: flex;
+  align-items: center;
+}
+.btn-more-white p {
+  margin-right: 17px;
+}
+
+/* =============== main-co-branding-down =============== */
+
+.co-branding-down-inside {
+  margin-bottom: 144px;
+}
+.co-branding-down-inside li {
+  margin-right: 30px;
+}
+.co-branding-down-inside li:nth-of-type(even) {
+  margin-right: 0px;
+}
+.co-branding-down img, .transparent {
+  width: 585px;
+  height: 592px; 
+}
+.transparent, .flex-center-center p {
+  position: absolute;
+}
+.transparent {
+  background: #fff;
+  opacity: 0.5;
+}
+
+/* =============== main-co-branding-recommend =============== */
+.recommend-list-wrap {
+  /* margin-bottom: 80px; */
+}
+.recommend-list {
+  margin-right: 24px;
+}
+.recommend-list:nth-last-of-type(1) {
+  margin-right: 0px;
+}
+.recommend-list img {
+  width: 282px;
+}
+.recommend-content{
+  width: 282px;
+  padding: 16px;
+  border: 1px solid #DEE2E6;
+}
+.recommend-content h4,
+.recommend-content h4 + p {
+  margin-bottom: 16px;
+}

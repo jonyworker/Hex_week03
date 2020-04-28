@@ -1,0 +1,70 @@
+
+/* =============== font-size =============== */
+
+.font-size-14-h21 {
+  font-size: 14px;
+  line-height: 21px;
+}
+.font-size-16-h21 {
+  font-size: 16px;
+  line-height: 21px;
+}
+.font-size-16-h24 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.font-size-20-h30 {
+  font-size: 20px;
+  line-height: 30px;
+}
+.font-size-24-h36 {
+  font-size: 24px;
+  line-height: 36px;
+}
+.font-size-36-h54 {
+  font-size: 36px;
+  line-height: 54px;
+}
+.font-size-48-h72 {
+  font-size: 48px;
+  line-height: 72px;
+}
+.font-size-64-h96 {
+  font-size: 64px;
+  line-height: 96px;
+}
+.font-size-72-h108 {
+  font-size: 72px;
+  line-height: 108px;
+}
+
+/* =============== font-family =============== */
+
+.font-PingFangTC-Regular {
+  font-family: PingFangTC-Regular, sans-serif;
+}
+.font-PingFangTC-Medium {
+  font-family: PingFangTC-Medium, sans-serif;
+}
+.font-PingFangTC-Semibold {
+  font-family: PingFangTC-Semibold, sans-serif;
+}
+
+.font-Roboto-Regular {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.font-Roboto-Medium {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+.font-Roboto-Bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+.font-Roboto-Black-Italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
