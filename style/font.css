@@ -41,13 +41,13 @@
 /* =============== font-family =============== */
 
 .font-PingFangTC-Regular {
-  font-family: PingFangTC-Regular, sans-serif;
+  font-family: PingFangTC-Regular, Microsoft JhengHei, sans-serif;
 }
 .font-PingFangTC-Medium {
-  font-family: PingFangTC-Medium, sans-serif;
+  font-family: PingFangTC-Medium, Microsoft JhengHei, sans-serif;
 }
 .font-PingFangTC-Semibold {
-  font-family: PingFangTC-Semibold, sans-serif;
+  font-family: PingFangTC-Semibold, Microsoft JhengHei, sans-serif;
 }
 
 .font-Roboto-Regular {
