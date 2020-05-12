@@ -3,203 +3,303 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hex week3 個人網站</title>
-  <link rel="stylesheet" href="style/cssReset.css">
+  <link rel="stylesheet" href="style/reset.css">
   <link rel="stylesheet" href="style/font.css">
   <link rel="stylesheet" href="style/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
     rel="stylesheet">
+  <script src="js/jquery.js"></script>
 </head>
 <body>
-  <header>
-    <nav class="navigation bg-color-primary">
-      <div class="navigation-inner w-1920">
+  <!--nav start-->
+  <nav class="nav bg-primary">
+    <div class="container-1920">
+      <ul class="dropdown">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="#">門市據點</a></li>
+        <li><a href="#">部落格</a></li>
+        <li><a href="#">常見問題</a></li>
+      </ul>
+      <div class="nav-block flex-row flex-align-sb flex-align-center">
         <a href="#"><img src="image/logo.png" alt="logo"></a>
-        <ul>
+        <a href="#" class="ham-icon"></a>
+        <ul class="nav-list flex-row">
           <li>
-            <a class="font-PingFangTC-Regular font-size-20-h30 color-white" href="#">系列鏡框</a>
+            <a class="font-PingFangTC-Regular font-size-20-h30 text-white" href="#">系列鏡框</a>
           </li>
           <li>
-            <a class="font-PingFangTC-Regular font-size-20-h30 color-white" href="#">門市據點</a>
+            <a class="font-PingFangTC-Regular font-size-20-h30 text-white" href="#">門市據點</a>
           </li>
           <li>
-            <a class="font-PingFangTC-Regular font-size-20-h30 color-white" href="#">部落格</a>
+            <a class="font-PingFangTC-Regular font-size-20-h30 text-white" href="#">部落格</a>
           </li>
-          
+  
           <li>
-            <a class="font-PingFangTC-Regular font-size-20-h30 color-white" href="#">常見問題</a>
+            <a class="font-PingFangTC-Regular font-size-20-h30 text-white" href="#">常見問題</a>
           </li>
         </ul>
       </div>
-    </nav>
-
-    <section class="banner w-1920">
-      <p class="font-PingFangTC-Medium font-size-36-h54 color-secondary">
-        Promise-Desert 2020 早春系列</p>
-      <h1 class="font-PingFangTC-Medium font-size-64-h96 color-secondary">
-        看得清，才能看得遠</h1>
-    </section>
-    <section class="aboutUs bg-color-tertiary color-secondary ">
-      <h2 class="font-PingFangTC-Semibold font-size-48-h72">用專業的心，做專業的事</h2>
-      <ul>
-        <li>
+  
+    </div>
+  </nav>
+  <!--nav end-->
+  
+  <!--header start-->
+  <header class="header">
+    <div class="container-1200 h-100">
+      <div class="header-block h-100 flex-row flex-jc-end flex-align-center">
+        <div class="header-title text-primary-dark">
+          <h4 class="font-size-36-h54 text-medium">
+            Promise-Desert 2020 早春系列</h4>
+          <h1 class="font-size-64-h96 text-medium">
+            看得清，才能看得遠</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--header end-->
+  
+  <!--about start-->
+  <section class="about bg-primary-light text-primary-dark ">
+    <h2 class="font-size-48-h72 text-bold">用專業的心，做專業的事</h2>
+    <div class="container-1200">
+      <ul class="about-block flex-row flex-align-sb">
+        <li class="about-list text-medium flex-column flex-align-center">
           <img src="image/icon-dollar.svg" alt="icon-dollar">
-          <h3 class="font-PingFangTC-Medium font-size-24-h36">單一價格</h3>
-          <p class="font-PingFangTC-Regular font-size-16-h24 color-black">無論任何度數皆不需追加費用 即可擁有適合自己的薄型球面 鏡片。</p>
+          <h3 class="font-size-24-h36">單一價格</h3>
+          <p class="font-size-16-h24 text-black">無論任何度數皆不需追加費用 即可擁有適合自己的薄型球面 鏡片。</p>
         </li>
-        <li>
+        <li class="about-list text-medium flex-column flex-align-center">
           <img src="image/icon-clock.svg" alt="icon-dollar">
-          <h3 class="font-PingFangTC-Medium font-size-24-h36">20 分鐘即可取件</h3>
-          <p class="font-PingFangTC-Regular font-size-16-h24 color-black">為了您的寶貴時間著想，以豐 富專業知識與技術將結帳到交 件的時間縮減至最快 20 分鐘 即可完成。</p>
+          <h3 class="font-size-24-h36">20 分鐘即可取件</h3>
+          <p class="font-size-16-h24 text-black">為了您的寶貴時間著想，以豐 富專業知識與技術將結帳到交 件的時間縮減至最快 20 分鐘 即可完成。</p>
         </li>
-        <li>
+        <li class="about-list text-medium flex-column flex-align-center">
           <img src="image/icon-heart.svg" alt="icon-dollar">
-          <h3 class="font-PingFangTC-Medium font-size-24-h36">安心售後服務</h3>
-          <p class="font-PingFangTC-Regular font-size-16-h24 color-black">我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+          <h3 class="font-size-24-h36">安心售後服務</h3>
+          <p class="font-size-16-h24 text-black">我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
         </li>
-        <li>
+        <li class="about-list flex-column text-medium flex-align-center">
           <img src="image/icon-glasses.svg" alt="icon-dollar">
-          <h3 class="font-PingFangTC-Medium font-size-24-h36">關於鏡片</h3>
-          <p class="font-PingFangTC-Regular font-size-16-h24 color-black">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+          <h3 class="font-size-24-h36">關於鏡片</h3>
+          <p class="font-size-16-h24 text-black">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--about end-->
+
+  <!--classic start-->
+  <section class="classic">
+    <h2 class="font-size-48-h72 text-bold text-primary-dark">經典系列鏡框</h2>
+    <div class="container-1200">
+      <ul class="classic-block">
+        <li class="classic-list flex-row flex-align-center">
+          <div class="classic-photo">
+            <img src="image/product-1.png" alt="product-1">
+          </div>
+          <div class="classic-title ">
+            <h3 class="font-size-48-h72 text-primary text-Black-Italic ">OPTICAL</h3>
+          </div>
         </li>
         
-      </ul>
-    </section>
-  </header>
-  <main>
-    <!--經典系列鏡框-->
-    <section class="classic">
-      <h2 class="font-PingFangTC-Semibold font-size-48-h72 color-secondary">經典系列鏡框</h2>
-
-      <ul class="classic-Series w-1200">
-        <li>
-          <img src="image/product-1.png" alt="product-1">
-          <div class="classic-Series-title">
-            <img class="classic-Series-icon" src="image/icon-diamond.svg" alt="">
-            <h3 class="font-Roboto-Black-Italic font-size-48-h72 color-primary ">OPTICAL</h3>
+        <li class="classic-list flex-row flex-jc-start flex-align-center">
+          <div class="classic-photo">
+            <img src="image/product-2.png" alt="product-1">
+          </div>
+          <div class="classic-title">
+            <h3 class="font-size-48-h72  text-primary text-Black-Italic">SUNGLASSES</h3>
           </div>
         </li>
 
-        <li>
-          <img src="image/product-2.png" alt="product-2">
-          <div class="classic-Series-title">
-            <img class="classic-Series-icon" src="image/icon-sun.svg" alt="">
-            <h3 class="font-Roboto-Black-Italic font-size-48-h72 color-primary ">SUNGLASSES</h3>
+        <li class="classic-list flex-row flex-jc-start flex-align-center">
+          <div class="classic-photo">
+            <img src="image/product-3.png" alt="product-1">
           </div>
-        </li>
-
-        <li>
-          <img src="image/product-3.png" alt="product-3">
-          <div class="classic-Series-title">
-            <img class="classic-Series-icon" src="image/icon-thunder.svg" alt="">
-            <h3 class="font-Roboto-Black-Italic font-size-48-h72 color-primary ">FUNCTIONAL</h3>
+          <div class="classic-title">
+            <h3 class="font-size-48-h72 text-primary text-Black-Italic">FUNCTIONAL</h3>
           </div>
         </li>
       </ul>
+    </div>
+    
 
-    </section>
-    <!--聯名設計鏡框-->
-    <section class="co-branding w-1920">
-      <h1 class="font-PingFangTC-Semibold font-size-48-h72 color-white">聯名設計鏡框</h1>
-      <!--上層圖-->
-      <section class="co-branding-up w-1539">
-        <div class="co-branding-inside-left ">
-          <img src="image/product-4.png" alt="">
-          <div class="co-branding-inside-right-top">
-            <img src="image/product-5.png" alt="">
-            <div class="co-branding-inside-right-bottom-left">
-              <img src="image/product-6.png" alt="">
-              <div class="co-branding-inside-right-bottom-right">
-                <img src="image/product-7.png" alt="">
-                <!--more按鈕-->
-                <div class="btn-more">
-                  <div class="btn-more-yellow">
-                    <div class="btn-more-white">
-                      <p class="font-Roboto-Bold font-size-72-h108 color-primary">MORE</p>
-                      <img src="image/icon-arrow.svg" alt="">
-                    </div>
-                  </div>
-                </div>
+    
+  </section>
+  <!--classic end-->
+
+  <!--brand start-->
+  <section class="brand">
+    <h2 class="font-size-48-h72 text-center text-bold text-white">聯名設計鏡框</h2>
+    <ul class="brand-list">
+      <!--cobrand-->
+      <li class="co-brand container-1538 flex-row ">
+        <!--圖左-->
+        <div class="product-4 mr-1"></div>
+        <div class="right-part ">
+          <!--圖右上-->
+          <div class="product-5 mb-1"></div>
+          <div class="right-bottom flex-row">
+            <!--圖右下左-->
+            <div class="product-6 mr-1"></div>
+            <div class="right-bottom-right flex-column flex-align-end">
+              <div class="product-7 mb-1"></div>
+              <!--more按鈕-->
+              <div class="brand-more ">
+                <div class="brand-more-white">
               </div>
             </div>
+
           </div>
+
         </div>
-      </section>
-      <!--下層圖-->
-      <section class="co-branding-down w-1200">
-        <ul class="co-branding-down-inside flex-row">
-          <li class="flex-center-center">
-            <img src="image/product-8.png" alt="">
-            <div class="transparent"></div>
-            <p class="font-Roboto-Bold font-size-72-h108 color-primary">Double A+</p>
-          </li>
-          <li class="flex-center-center">
-            <img src="image/product-9.png" alt="">
-            <div class="transparent"></div>
-            <p class="font-Roboto-Bold font-size-72-h108 color-primary">YOUTH</p>
-          </li>
+      </li>   
+      <!--other-brand-->
+      <li class="other-brand container-1200">
+        <ul class="brand-block flex-row">
+          <li class="product-8 mr1"></li>
+          <li class="product-9"></li>
         </ul>
+      </li>
+    </ul>
+  </section>
+  <!--brand end-->
+
+  <!--recommend start-->
+  <section class="rec container-1200">
+    <h2 class="font-size-48-h72 text-center text-bold text-white">顧客推薦</h2>
+    <ul class="rec-block">
+
+      <li class="rec-list">
+        <div class="rec-list-photo rec-1"></div>
+        <div class="rec-list-content">
+          <h4 class="text-medium font-size-16-h21 mb-2">Jessy</h4>
+          <p class="text-regular font-size-16-h24 mb-2">This is a wider card with supporting text below as a natural
+            lead-in to additional content.</p>
+          <p class="text-regular font-size-16-h21 text-grey ">Last updated 3 mins ago</p>
+        </div>
+      </li>
+  
+      <li class="rec-list">
+        <div class="rec-list-photo rec-2"></div>
+        <div class="rec-list-content">
+          <h4 class="text-medium font-size-16-h21 mb-2">Jessy</h4>
+          <p class="text-regular font-size-16-h24 mb-2">This is a wider card with supporting text below as a natural
+            lead-in to additional content.</p>
+          <p class="text-regular font-size-16-h21 text-grey ">Last updated 3 mins ago</p>
+        </div>
+      </li>
+  
+      <li class="rec-list">
+        <div class="rec-list-photo rec-3"></div>
+        <div class="rec-list-content">
+          <h4 class="text-medium font-size-16-h21 mb-2">Jessy</h4>
+          <p class="text-regular font-size-16-h24 mb-2">This is a wider card with supporting text below as a natural
+            lead-in to additional content.</p>
+          <p class="text-regular font-size-16-h21 text-grey ">Last updated 3 mins ago</p>
+        </div>
+      </li>
+  
+      <li class="rec-list ">
+        <div class="rec-list-photo rec-4"></div>
+        <div class="rec-list-content">
+          <h4 class="text-medium font-size-16-h21 mb-2">Jessy</h4>
+          <p class="text-regular font-size-16-h24 mb-2">This is a wider card with supporting text below as a natural
+            lead-in to additional content.</p>
+          <p class="text-regular font-size-16-h21 text-grey ">Last updated 3 mins ago</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!--recommend end-->
+  
+  <!--contact start-->
+  <section class="contact bg-primary-light">
+    <div class="contact-block container-1200 ">
+        <h2 class="text-bold font-size-48-h72 mb-3">聯絡我們</h2>
+        <p class="text-regular font-size-20-h30">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
         
-      </section> 
-      <!--顧客推薦-->
-      <section class="recommend w-1200">
-        <h1 class="font-PingFangTC-Semibold font-size-48-h72 color-white">顧客推薦</h1>
-        <ul class="recommend-list-wrap flex-row">
-
-          <li class="recommend-list">
-            <img src="image/rec-1.png" alt="">
-            <div class="recommend-content">
-              <h4 class="font-Roboto-Medium font-size-16-h21">Jessy</h4>
-              <p class="font-Roboto-Regular font-size-16-h24">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-              <p class="font-Roboto-Regular font-size-16-h21 color-grey">Last updated 3 mins ago</p>
-            </div>
+        <form class="contact-form font-PingFangTC-Regular font-size-16-h24" action="">
+          <label for="username">姓名</label>
+          <input type="text" id="username" name="username" placeholder="陳小明">
+        
+          <label for="tel">聯絡電話</label>
+          <input type="tel" id="tel" name="tel" placeholder="0912-345-678">
+        
+          <label for="email">電子郵件</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com">
+        
+          <label for="feedback">意見反應</label>
+          <textarea type="text" id="feedback" name="feedback" placeholder="請輸入您的意見"></textarea>
+        
+          <label for="checkbox">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+            <input type="checkbox" id="checkbox" name="agree">
+            <span class="checkmark"></span>
+          </label>
+        
+          <div class="submit">
+            <input class="font-Roboto-Bold font-size-16-h24 text-white bg-primary " type="submit" value="確認送出">
+          </div>
+        </form>
+      
+      
+    </div>
+  </section>
+  <!--contact end-->
+  
+  <!--footer start-->
+  <footer class="bg-primary">
+    <div class="footer-wrap container-1200">
+      <section class="footer-content-top ">
+        <div class="top-left flex-column">
+          <!-- footer link -->
+          <ul class="footer-link">
+            <li class="font-PingFangTC-Regular font-size-16-h24">
+              <a href="#">首頁</a>
+              <a href="#">系列鏡框</a>
+              <a href="#">門市據點</a>
+              <a href="#">部落格</a>
+              <a href="#">常見問題</a>
+            </li>
+          </ul>
+          <!-- footer service -->
+          <ul class="footer-service font-Roboto-Regular font-size-36-h54 text-white">
+            <li>0800-000-000</li>
+            <li>glasses@business.com</li>
+          </ul>
+        </div>
+        <!-- footer icon -->
+        <ul class="footer-icon flex-row">
+          <li>
+            <a class="icon fb" href="#"></a>
           </li>
-
-          <li class="recommend-list">
-            <img src="image/rec-2.png" alt="">
-            <div class="recommend-content">
-              <h4 class="font-Roboto-Medium font-size-16-h21">Karen</h4>
-              <p class="font-Roboto-Regular font-size-16-h24">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-              <p class="font-Roboto-Regular font-size-16-h21 color-grey">Last updated 3 mins ago</p>
-            </div>
+          <li>
+            <a class="icon ig" href="#"></a>
           </li>
-
-          <li class="recommend-list">
-            <img src="image/rec-3.png" alt="">
-            <div class="recommend-content">
-              <h4 class="font-Roboto-Medium font-size-16-h21">Chelsea</h4>
-              <p class="font-Roboto-Regular font-size-16-h24">This is a wider card with supporting text below as a natural lead-in
-                to additional content.</p>
-              <p class="font-Roboto-Regular font-size-16-h21 color-grey">Last updated 3 mins ago</p>
-            </div>
+          <li>
+            <a class="icon line" href="#"></a>
           </li>
-
-          <li class="recommend-list">
-            <img src="image/rec-4.png" alt="">
-            <div class="recommend-content">
-              <h4 class="font-Roboto-Medium font-size-16-h21">Jane</h4>
-              <p class="font-Roboto-Regular font-size-16-h24">This is a wider card with supporting text below as a natural lead-in
-                to additional content.</p>
-              <p class="font-Roboto-Regular font-size-16-h21 color-grey">Last updated 3 mins ago</p>
-            </div>
-          </li>
-
         </ul>
       </section>
-    </section>
-    
-    <section class="contactUs bg-color-tertiary">
-      <div class="contactUs-wrap w-792">
-        <h1 class="font-PingFangTC-Semibold font-size-48-h72 w-792">聯絡我們</h1>
-        <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-      </div>
-      
-    </section>
-  </main>
-  <footer>
-    
+
+      <section class="footer-copyright">
+        <ul>
+          <li>
+            <img src="image/logo.png" alt="">
+            <p class="font-Roboto-Regular font-size-16-h24 text-white">Copyright &copy; 2020 Glasses.All rights reserved.</p>
+          </li>
+          <li>
+            <a class="font-PingFangTC-Regular font-size-14-h21 text-white" href="#">隱私權政策</a>
+            <a class="font-PingFangTC-Regular font-size-14-h21 text-white" href="#">服務條款</a>
+          </li>
+        </ul>
+        <div class="cell-logo"></div>
+      </section>
+    </div>
 
   </footer>
-  
+  <!--footer end-->
 </body>
 </html>
