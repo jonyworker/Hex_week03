@@ -1,117 +1,4 @@
 
-/* =============== 全域設定 =============== */
-
-* {
-  box-sizing: border-box;
-  /* outline: 1px solid red; */
-}
-a {
-  text-decoration: none;
-}
-img {
-  display: block;
-}
-body{
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.5;
-  margin: 0 auto;
-}
-h1, h2, h3, h4, h5 ,h6 {
-  line-height: 1.2;
-  font-weight: bold;
-}
-
-/* 容器寬度 */
-.container-1920 {
-  max-width: 1920px;
-  margin: auto; }
-
-.container-1200 {
-  max-width: 1200px;
-  margin: 0 auto; }
-
-.container-1538 {
-  max-width: 1538px;
-  height: 100%;
-  margin: 0 auto; }
-
-/* 背景顏色 */
-.bg-primary {
-  background-color: #AA0601;
-}
-.bg-primary-dark {
-  background-color: #650300;
-}
-.bg-primary-light {
-  background-color: #AA06010D;
-}
-/* flex-box */
-.flex-row {
-  display: flex;
-}
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-.flex-jc-start {
-  justify-content: flex-start;
-}
-.flex-jc-center {
-  justify-content: center;
-}
-.flex-jc-end {
-  justify-content: flex-end;
-}
-.flex-jc-sb {
-  justify-content: space-between;
-}
-.flex-align-start {
-  align-items: flex-start;
-}
-.flex-align-center {
-  align-items: center;
-}
-.flex-align-end {
-  align-items: flex-end;
-}
-.flex-align-sb {
-  align-items: space-between;
-}
-.flex-d-r-reverse {
-  flex-direction: row-reverse;
-}
-/* utilities */
-.h-100 {
-  height: 100%;
-}
-.mask {
-  background: #fff;
-}
-.op-05 {
-  opacity: 0.5;
-}
-.mr-1 {
-  margin-right: 8px;
-}
-.mr-2 {
-  margin-right: 16px;
-}
-.mr-3 {
-  margin-right: 24px;
-}
-.mb-1 {
-  margin-bottom: 8px;
-}
-.mb-2 {
-  margin-bottom: 16px;
-}
-.mb-3 {
-  margin-bottom: 24px;
-}
-.mb-144 {
-  margin-bottom: 144px;
-}
-
 
 /* =======  navigation ======= */
 .nav-block {
@@ -338,7 +225,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 .classic-title h3 {
     display: flex;
-    align-items: center
+    align-items: center;
 }
 /* 小標前icon */
 .classic-list:nth-of-type(1)
